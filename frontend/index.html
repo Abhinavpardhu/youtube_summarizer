@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Video Summarizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YouTube Video Summarizer</h1>
+
+      <div class="input-box">
+        <input
+          type="text"
+          id="youtubeUrl"
+          placeholder="Paste a YouTube URL here"
+          aria-label="YouTube URL"
+        />
+        <button id="summarizeBtn">Summarize</button>
+      </div>
+
+      <div id="loading" class="loading hidden">Loading...</div>
+
+      <div id="result" class="result hidden">
+        <section>
+          <h2>Summary</h2>
+          <p id="summaryText"></p>
+        </section>
+
+        <section>
+          <h2>Key Points</h2>
+          <ul id="keyPointsList"></ul>
+        </section>
+
+        <section>
+          <h2>Important Concepts</h2>
+          <ul id="importantConceptsList"></ul>
+        </section>
+
+        <section>
+          <h2>Final Takeaway</h2>
+          <p id="takeawayText"></p>
+        </section>
+      </div>
+
+      <div id="errorBox" class="error hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
